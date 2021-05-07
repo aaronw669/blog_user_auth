@@ -13,8 +13,7 @@ from flask_gravatar import Gravatar
 import os
 
 app = Flask(__name__)
-MY_SECRET = os.environ.get("MY_SECRET")
-app.config['MY_SECRET'] = MY_SECRET
+app.config['MY_SECRET'] = os.environ.get("MY_SECRET")
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
