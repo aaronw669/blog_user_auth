@@ -67,7 +67,7 @@ class Comment(db.Model):
 
 
 
-db.create_all()
+# db.create_all()
 
 
 def admin_only(f):
